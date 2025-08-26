@@ -1,0 +1,52 @@
+DDL: create, drop, alter, rename, insert.
+
+1. Create:
+To create a database we use "create":
+**Syntax: create database database_name;
+
+2.drop:To delete the whole table along with the data and strcture of the table
+**Syntax: drop database database_name;
+
+3.use: to use the database
+**syntax: use database;
+
+
+creating a table: 
+create table table_name (
+  column_name1 datatype,
+  column_name2 datatype,
+  column_name3 datatype,
+  column_name4 datatype,
+  
+  ----------------------
+  ----------------------
+  column_namen datatype
+)
+**Key Points:
+i) use () this braces only not {}
+ii) after closing the creating table code use ;
+**iii) after the last statement of creating a column don't keep ,
+
+
+
+
+PRIMARY KEYS AND FOREIGN KEYS:
+i) primary keys: it is a unique identifier for each record in a database table.
+  syntax: column_name datatype primary key,
+  *it is always not null
+ii)foreign keys: it is a field in a one table that refers the primary key of another table.
+  syntax: foreign key(present table column_name) references another_table_name(that table column_name which should have  primary key)
+  *foregin keys can be multple and null.
+
+
+4. insert:
+To insert any values into the table we use below syntax:
+  1: for inserting single value: insert into table_name(column1, column2, column3, ......, columnn) values (data1, data2, data3, ......, datan);
+  2. for inserting multiple values:
+       insert into table_name(column1, column2, column3, ......, columnn) values 
+       (data1, data2, data3, ......, datan), 
+       (data1, data2, data3, ......, datan),
+       (data1, data2, data3, ......, datan), 
+       ------------------------------------
+       ------------------------------------       
+       (data1, data2, data3, ......, datan);

@@ -1,0 +1,52 @@
+1-Database Management System:
+* It is a software or an application which allows users to create, maintain, or access the databases.
+* It acts as an intermediate between the database and users.
+
+2-Types of Databases:
+1. Centralized Database
+2. NoSql Database
+3. Relational Database
+4. Object Oriented Database
+5. Distributed Database
+6. Cloud Database
+7. Network Database
+8. Hierarchial Database
+
+
+3-Relational Databases: This databases stores the data in the form of tables only. Ex: MySql, PostgpreSql, etc..,
+4-Non Relational Databases: This databases won't store the data in the form of tables instead they store in the form of "documents(MongoDB), key-value pairs, graphs, or wide-columns".
+
+5-
+*To deal with relational databases we use "SQL(Structured Query Lannguage)" programming language.
+* In sql we usually perform "CRUD(create, read, update, delete)" operations on tables.
+*sql is case in sensitive(movies and MOVIES are same)
+* Rows(-), Columns(|)
+
+6-SQL COMMANDS:
+1. DDL (DATA DEFINATION LANGUAGE)     ---> CREATE, DROP, ALTER, TRUNCATE, RENAME.
+2. DQL (DATA QUERY LANGUAGE)          ---> SELECT.
+3. DML (DATA MANIPULATION LANGUAGE)   ---> INSERT, UPDATE, DELETE, LOCK.
+4. DCL (DATA CONTROL LANGUAGE)        ---> GRANT, REVOKE.
+5. TCL (TRANSACTION CONTROL LANGUAGE) ---> BEGIN TRANSACATION, COMMIT, ROLL BACK, SAVE PRINT. 
+
+7-SQL DATATYPES: 
++---------------------+--------------------------------------+-------------------------------+
+| Data Type           | Description                          | Example Usage                 |
++---------------------+--------------------------------------+-------------------------------+
+| INT / INTEGER       | Stores whole numbers                   | age INT                     |
+| BIGINT              | Stores large whole numbers             | salary BIGINT               |
+| SMALLINT            | Stores small-range whole numbers       | grade SMALLINT              |
+| DECIMAL / NUMERIC   | Stores fixed-point numbers with precision | price DECIMAL(8,2)       |
+| FLOAT / REAL        | Stores approximate decimal numbers    | rating FLOAT                 |
+| DOUBLE              | Stores double-precision decimal numbers | temperature DOUBLE         |
+| CHAR(n)             | Fixed-length string                   | code CHAR(5)                 |
+| VARCHAR(n)          | Variable-length string                | name VARCHAR(50)             |
+| TEXT                | Stores large text, unlimited text     | description TEXT             |
+| DATE                | Stores date values (YYYY-MM-DD)      | dob DATE                      |
+| TIME                | Stores time values (HH:MM:SS)        | start_time TIME               |
+| DATETIME / TIMESTAMP| Stores date and time                  | created_at DATETIME          |
+| BOOLEAN / BIT       | Stores true/false values              | is_active BOOLEAN            |
+| BLOB / BYTEA        | Stores binary data (images/files)     | profile_pic BLOB             |
++---------------------+--------------------------------------+-------------------------------+
+*The main used are bigint, varchar, date(YYYY-MM-DD), time(HH:MM:SS), timestamp, double, blob(used to store images, mp3 or like that files etc..,)
+
