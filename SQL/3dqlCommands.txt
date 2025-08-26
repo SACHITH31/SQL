@@ -1,0 +1,7 @@
+DQL: select
+
+1.select:
+*It is used retrieve data from one or more columns of a table.
+example:
+i) select * from table_name; #here * is used to retrieve all the columns data in specified table_name.
+ii) select column1, column2, column3, ......., columnn from table_name; # it is used when ever we want to specifically retrieve the particular column data.
