@@ -1,0 +1,52 @@
+Constraints:
+
++----------------+----------------------------------------------------+-----------------------------------------------------------+
+| Constraint     | Description                                        | Example Usage                                             |
++----------------+----------------------------------------------------+-----------------------------------------------------------+
+| PRIMARY KEY    | Uniquely identifies each row; cannot be NULL      | id INT PRIMARY KEY                                         |
+| FOREIGN KEY    | Ensures values in one table exist in another      | director_id INT, FOREIGN KEY (director_id)                 |
+|                |                                                   | REFERENCES directors(director_id)                          |
+| UNIQUE         | Ensures all values in a column are unique         | email VARCHAR(100) UNIQUE                                  |
+| NOT NULL       | Ensures a column cannot have NULL values          | name VARCHAR(50) NOT NULL                                  |
+| CHECK          | Ensures values in a column meet a condition       | price FLOAT CHECK (price > 0)                              |
+| DEFAULT        | Sets a default value when none is provided        | status VARCHAR(10) DEFAULT 'active'                        |
+| AUTO_INCREMENT | Automatically generates a unique number for each  | id INT PRIMARY KEY AUTO_INCREMENT                          |
+|                | new row (MySQL)                                   |                                                            |
+| INDEX          | Improves search performance on a column           | CREATE INDEX idx_name ON employees(name);                  |
++----------------+----------------------------------------------------+-----------------------------------------------------------+
+
+
+PRIMARY KEY: Uniquely identifies each row in a table; cannot be NULL.
+
+FOREIGN KEY: Ensures values in one table match values in another table; maintains referential integrity.
+
+NOT NULL: Ensures a column must have a value; cannot be empty.
+
+DEFAULT: Provides a default value for a column if no value is specified.
+
+AUTO_INCREMENT: Automatically generates a unique number for new rows.
+
+INDEX: Improves query performance on a column.
+
+UNIQUE: Ensures all values in a column are distinct.
+
+CHECK: Ensures column values satisfy a specific condition.
+
+
+--code for using the not null and default:
+CREATE TABLE students (
+  student_id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(100) NOT NULL DEFAULT 'Guest',
+  age INT,
+  email VARCHAR(100)
+);
+INSERT INTO students (age, email) 
+VALUES (20, 'test@example.com');
+
+-->here for name we used not null but we are not inserting any data to name field but we used default as guest then for name field it stores as guest for this particular student data.and output is:
++------------+--------+-----+-------------------+
+| student_id | name   | age | email             |
++------------+--------+-----+-------------------+
+| 1          | Guest  | 20  | test@example.com  |
++------------+--------+-----+-------------------+
+
